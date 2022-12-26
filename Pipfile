@@ -3,46 +3,47 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[[source]]
-url = "https://download.pytorch.org/whl/nightly/cpu"
-verify_ssl = true
-name = "downloadpytorch"
-
 [packages]
+accelerate = "*"
 basicsr = "*"
+clean-fid = "*"
 diffusers = "*"
+einops = "*"
 fairscale = "==0.4.4"
 fonts = "*"
 font-roboto = "*"
-gradio = "==3.4b3"
+gdown = "*"
+GitPython = "*"
+gradio = "==3.9"
+inflection = "*"
 invisible-watermark = "*"
+jsonmerge = "*"
+k-diffusion = {git = "https://github.com/crowsonkb/k-diffusion.git"}
+kornia = "*"
+lark = "*"
 numpy = "*"
 omegaconf = "*"
+opencv-python = "*"
 piexif = "*"
 pillow = "*"
-pytorch-lightning = "*"
+protobuf = "==3.19.4"
+pytorch-lightning = "1.7.7"
 realesrgan = "*"
+resize-right = "*"
+safetensors = "*"
 scikit-image = ">=0.19"
-clip = {ref = "d50d76daa670286dd6cacf3bcd80b5e4823fc8e1", git = "https://github.com/openai/CLIP"}
-gfpgan = {ref = "8d2447a2d918f8eba5a4a01463fd48e45126a379", git = "https://github.com/TencentARC/GFPGAN.git"}
 timm = "==0.4.12"
 transformers = "==4.19.2"
-einops = "*"
-jsonmerge = "*"
-clean-fid = "*"
-resize-right = "*"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
 torchdiffeq = "*"
-kornia = "*"
-protobuf = "==3.19.4"
-torch = {version = "*", index = "downloadpytorch"}
-torchvision = {version = "*", index = "downloadpytorch"}
-torchaudio = {version = "*", index = "downloadpytorch"}
-gdown = "*"
+torchsde = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.8"
 
 [pipenv]
 allow_prereleases = true
